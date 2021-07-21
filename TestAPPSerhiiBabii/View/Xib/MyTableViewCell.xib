@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" rowHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="TestAPPSerhiiBabii" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="NkB-E0-ipC">
+                        <rect key="frame" x="11" y="151" width="373.33333333333331" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="100" horizontalCompressionResistancePriority="300" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="aCh-Qa-pu5">
+                        <rect key="frame" x="0.0" y="1" width="400" height="138"/>
+                        <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="cMf-pV-wXA">
+                        <rect key="frame" x="190" y="177" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aCh-Qa-pu5" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="147-q4-Xec"/>
+                    <constraint firstItem="cMf-pV-wXA" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.05" id="B4J-b0-3zZ"/>
+                    <constraint firstItem="cMf-pV-wXA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.87" id="HcJ-FP-Ws1"/>
+                    <constraint firstItem="NkB-E0-ipC" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.933333" id="JPp-pz-4YJ"/>
+                    <constraint firstItem="cMf-pV-wXA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jrt-lC-g1R"/>
+                    <constraint firstItem="aCh-Qa-pu5" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.69" id="RsT-YE-0d7"/>
+                    <constraint firstItem="aCh-Qa-pu5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.7" id="RzF-CM-fUo"/>
+                    <constraint firstItem="cMf-pV-wXA" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.1" id="S6o-ZS-zbb"/>
+                    <constraint firstItem="NkB-E0-ipC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.64" id="bNL-6L-vAC"/>
+                    <constraint firstItem="NkB-E0-ipC" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.13" id="cJ9-KF-x5K"/>
+                    <constraint firstItem="aCh-Qa-pu5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="j3w-R8-9nY"/>
+                    <constraint firstItem="NkB-E0-ipC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-2.3333333333333712" id="qHC-Ys-UMb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicator" destination="cMf-pV-wXA" id="D1n-BK-aIP"/>
+                <outlet property="imageCell" destination="aCh-Qa-pu5" id="dtb-2x-zTb"/>
+                <outlet property="labelCell" destination="NkB-E0-ipC" id="eMp-99-Elg"/>
+            </connections>
+            <point key="canvasLocation" x="203.27102803738316" y="129.58963282937367"/>
+        </tableViewCell>
+    </objects>
+</document>

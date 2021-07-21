@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zgu-aS-ubd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NewsViewController" customModule="TestAPPSerhiiBabii" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W5h-TB-DWv">
+                                <rect key="frame" x="0.0" y="50" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W5h-TB-DWv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dB0-OX-a1f"/>
+                            <constraint firstItem="W5h-TB-DWv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fzH-cT-lyt"/>
+                            <constraint firstAttribute="trailing" secondItem="W5h-TB-DWv" secondAttribute="trailing" id="u6Q-4d-Ffm"/>
+                            <constraint firstAttribute="bottom" secondItem="W5h-TB-DWv" secondAttribute="bottom" id="viw-MU-Fha"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="zmL-67-Zq0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Qk2-Cw-Oz7">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="H2T-KI-rNd" kind="show" id="wbQ-e8-KHi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="newsTableView" destination="W5h-TB-DWv" id="SOz-jr-QRT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="JXS-OP-Zzj">
+            <objects>
+                <viewController id="H2T-KI-rNd" customClass="SearchViewController" customModule="TestAPPSerhiiBabii" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nPa-Z8-JA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oop-bL-oUM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Sy-ir-FPV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oop-bL-oUM" firstAttribute="top" secondItem="6Sy-ir-FPV" secondAttribute="top" id="S1U-Nb-wh7"/>
+                            <constraint firstItem="6Sy-ir-FPV" firstAttribute="trailing" secondItem="oop-bL-oUM" secondAttribute="trailing" id="SFw-bQ-v50"/>
+                            <constraint firstItem="oop-bL-oUM" firstAttribute="leading" secondItem="6Sy-ir-FPV" secondAttribute="leading" id="iwb-yV-9WM"/>
+                            <constraint firstItem="6Sy-ir-FPV" firstAttribute="bottom" secondItem="oop-bL-oUM" secondAttribute="bottom" id="tVh-Ek-hoA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="7AE-21-ZQD"/>
+                    <connections>
+                        <outlet property="backButton" destination="7AE-21-ZQD" id="bO4-3O-Sr6"/>
+                        <outlet property="table" destination="oop-bL-oUM" id="a9y-AZ-Ae4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXI-E1-mij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q2Z-93-KWx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zgu-aS-ubd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="tZ0-Ty-dMf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kfj-pH-vMB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9Z-Qw-bhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
